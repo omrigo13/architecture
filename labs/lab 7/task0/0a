@@ -1,0 +1,6 @@
+1. entry point specified in the ELF Header and its address: 0x80482e0
+2. there are 34 sections in the Section Headers
+3. .text found on index 12 and its size:  0001b8
+4. in the symbol table index 57 we can find the symbol _start and its mapped to 080482e0 which is .text section
+5. in the symbol table index 60 we can find the symbol main and its mapped to  08048388 which is part of the .text section
+6.  080482e0 - 08048388 means 168 bytes after the start of .text section in the middle of it

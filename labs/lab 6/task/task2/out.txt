@@ -1,0 +1,8 @@
+LineParser.c
+LineParser.h
+LineParser.o
+makefile
+myshell
+out.txt
+task2.c
+task2.o

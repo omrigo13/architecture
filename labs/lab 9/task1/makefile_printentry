@@ -1,0 +1,22 @@
+# define some Makefile variables for the compiler and compiler flags
+# to use Makefile variables later in the Makefile: $()
+CC = gcc
+CFLAGS  = -g -Wall -c
+
+# All Targets
+all: printentry
+
+# Tool invocations
+# Executable "printentry" depends on the files:
+printentry: printentry.o
+	@echo 'Building target: printentry'
+	$(CC) -m32 printentry.o -o printentry
+	@echo 'Finished building target: printentry'
+
+# Depends on the source file (c)
+printentry.o: printentry.c
+	$(CC) $(CFLAGS) -m32 -o printentry.o printentry.c 
+
+# Clean the build directory and executable
+clean:
+	rm -f *.o printentry

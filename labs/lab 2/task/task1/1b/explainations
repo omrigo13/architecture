@@ -1,0 +1,10 @@
+the purpose of distances printed in the point_at function
+is to see how much space of bytes allocated for every variable and
+for example addr6 and addr5 are global ints in the same area and because int is 4 bytes
+the dist is 4
+the other dists are larger because of other areas of variables storing like local in main or functions area
+
+addr6 - global variables
+addr5 - global variables
+local - local variables
+foo - global functions

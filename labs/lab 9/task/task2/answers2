@@ -1,0 +1,7 @@
+ Can it infect itself? Why, or why not?  it can't infect itself because ELFexec just runs the executable file and the virus is used for telling
+the file what to do. to jump to the virus code and run it and then jump back to the original code and run it and also the virus is writing the
+additional code to the ELF file
+
+
+
+7

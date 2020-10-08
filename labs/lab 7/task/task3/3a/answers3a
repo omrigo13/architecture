@@ -1,0 +1,13 @@
+main can be found on abc file in offset 65 (file location), starts at address 08048464, section number 13
+the main function size is 175
+
+section 13 is the .text
+Addr = 080483b0
+Offset = 0003b0
+size = 00020c
+
+addresses diff = 08048464 - 080483b0 = 134513764 - 134513584 = 180 = B4
+
+offset = 3b0 + b4 = 464
+
+should run the hexeditplus and then load 175 bytes starting from 464 and then display them

@@ -1,0 +1,2 @@
+the function that runs the main is _start that should start at address 08048080 and not 804808a as its now
+he have to change that to fix the file and it would run fine.

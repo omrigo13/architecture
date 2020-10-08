@@ -1,0 +1,17 @@
+digit_cnt starts at 00000577 and its size is 1136 on ntsc file
+digit_cnt starts at 0000056d and its size is 80 on digitCounter file
+
+the whole file size of ntsc is 7320 bytes
+
+the whole file size of digitCounter is 9260 bytes
+
+
+guide to fix ntsc:
+
+1. run hexeditplus and choose 1 to set file as digitCounter (the compiled code i wrote)
+2. set unit size to 1 byte in option 2
+3. load into memory with option 3 with location: 56d and length 80
+4. set file to ntsc with option 1
+5. set again to 1 byte on option 2
+6. save into file with option 6 with source address: 0, target location: 577, length: 1136
+7. run ntsc and check if its ok now

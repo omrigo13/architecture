@@ -1,0 +1,30 @@
+# define some Makefile variables for the compiler and compiler flags
+# to use Makefile variables later in the Makefile: $()
+CC = gcc
+CFLAGS  = -g -Wall
+
+# All Targets
+all: looper
+
+# Tool invocations
+# Executable "looper" depends on the files:
+looper:  LineParser.o
+	@echo 'Building target: looper'
+	$(CC) -m32 $(CFLAGS) -o looper LineParser.o
+	@echo 'Finished building target: looper'
+
+# Depends on the source file (c)
+
+LineParser.o: LineParser.c
+	$(CC) -m32 $(CFLAGS) -c -o LineParser.o LineParser.c
+
+looper: looper.o
+	$(CC) -m32 $(CFLAGS) -o looper looper.o
+
+looper.o: looper.c
+	$(CC) -m32 $(CFLAGS) -c -o looper.o looper.c
+
+
+# Clean the build directory and executable
+clean:
+	rm -f *.o looper

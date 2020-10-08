@@ -1,0 +1,12 @@
+ndisasm -b32 abc - runs the whole abc file and shows for every line its assembly code
+
+there is an option so skip assembly lines using -k flag and offset, length
+
+so i should run this command
+
+ndisasm -k1300,8000 abc - now i need to find line 464 (1124 in dec) which presents starts of main code
+
+the two first machine instructions in the main are:
+
+464 - push bp
+465 - mov bp, sp

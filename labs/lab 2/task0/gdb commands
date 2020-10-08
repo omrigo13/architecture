@@ -1,0 +1,13 @@
+gdb commands:
+
+gdb NameOfProgram - start debugging
+run - runs the program in debug mode
+list - shows the code lines
+list x,y - shows the code between lines x and y
+break/b x - make a breakpoint at line x
+info locals - shows details about the local variables
+next - make the next line in the code
+print x - print the value of local variable x
+continue - runs until the next break point
+info break/b - shows details about the breakpoints
+d x - delete breakpoint number x
